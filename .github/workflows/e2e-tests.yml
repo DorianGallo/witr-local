@@ -24,10 +24,10 @@ jobs:
             runner: windows-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Set up Go
-        uses: actions/setup-go@v6
+        uses: actions/setup-go@v7
         with:
           go-version: '1.25'
 
@@ -49,7 +49,7 @@ jobs:
     name: "Test: FreeBSD"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - name: Run on FreeBSD
         uses: vmactions/freebsd-vm@v1
         with:
